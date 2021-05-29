@@ -134,6 +134,7 @@ p {
 .contact .contact-list + .contact-list {
   margin-left: 50px;
 }
+
 .contact :hover,
 .contact :focus {
   color: var(--accent-color);
@@ -214,6 +215,27 @@ p {
   flex-basis: calc (100% / 4 - -30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+.feature-list-content::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  background-size: contain;
+}
+.icon-antenna::before {
+  background-image: url(../images/icon/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/icon/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/icon/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/icon/astronaut.svg);
 }
 .title {
   margin-top: 0;
