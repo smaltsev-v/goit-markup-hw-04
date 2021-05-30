@@ -220,10 +220,10 @@ p {
   display: block;
   content: "";
   height: 120px;
+  background-size: 70px 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
-  background-size: contain;
 }
 .icon-antenna::before {
   background-image: url(../images/icon/antenna.svg);
@@ -305,6 +305,32 @@ p {
   background-color: var(--accent-color);
   font-weight: bold;
   text-align: center;
+}
+/* icon link */
+.social {
+  display: flex;
+  margin: 16px 32px 0px 32px;
+}
+.social-link-content {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: #fff;
+}
+.social-icon {
+  margin: 12px;
+  fill: currentColor;
+}
+
+.social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link-content:hover {
+  background-color: var(--accent-color);
+  color: #fff;
 }
 
 /* footer */
