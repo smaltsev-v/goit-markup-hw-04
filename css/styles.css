@@ -111,9 +111,9 @@ p {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-.link-contact:active {
+/* .link-contact:active {
   color: var(--accent-color);
-}
+} */
 .link-contact {
   color: var(--primaty-text-color);
   text-decoration: none;
