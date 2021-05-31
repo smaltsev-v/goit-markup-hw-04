@@ -12,6 +12,7 @@
   --portfolio-secondary-color: #f5f4fa;
   --background-color-secondary: #2f303a;
   --cart-set-gap: 30px;
+  --bg-icon-feature: #f5f4fa;
 }
 html {
   box-sizing: border-box;
@@ -134,11 +135,24 @@ p {
 .contact .contact-list + .contact-list {
   margin-left: 50px;
 }
+.header-icon {
+  fill: #757575;
+  margin-right: 10px;
+}
 
-.contact :hover,
+.contact-list :hover,
+.contact-list :focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+/* .contact :hover,
 .contact :focus {
   color: var(--accent-color);
 }
+.header-icon :hover,
+.header-icon :focus {
+  fill: var(--accent-color);
+} */
 .no-padding {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -216,27 +230,14 @@ p {
   margin-left: 30px;
   margin-top: 30px;
 }
-.feature-list-content::before {
-  display: block;
-  content: '';
+
+.icon-feature-content {
+  background-color: var(--bg-icon-feature);
   height: 120px;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
+  width: 270px;
+  padding: 25px 100px;
 }
-.icon-antenna::before {
-  background-image: url('../images/icon/antenna.svg');
-}
-.icon-clock::before {
-  background-image: url('../images/icon/clock.svg');
-}
-.icon-diagram::before {
-  background-image: url('../images/icon/diagram.svg');
-}
-.icon-astronaut::before {
-  background-image: url('../images/icon/astronaut.svg');
-}
+
 .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -359,6 +360,37 @@ p {
   color: var(--accent-color);
 }
 /* footer */
+.social-footer {
+  display: flex;
+}
+.f-section {
+  display: flex;
+}
+.footer-link {
+  justify-content: start;
+  margin-left: 70px;
+  padding-top: 15px;
+}
+.titel-footer {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.social-link-footer {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-link-footer:hover {
+  background-color: var(--accent-color);
+}
 .footer {
   background-color: var(--background-color-secondary);
   padding-top: 60px;
@@ -427,6 +459,8 @@ p {
 .button-filters:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-portfolio {
   margin-bottom: 50px;
@@ -492,4 +526,9 @@ p {
   padding-bottom: 20px;
   padding-left: 23px;
   border: 1px solid #eeeeee;
+}
+.projects-scroll :hover {
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
