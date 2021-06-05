@@ -181,7 +181,7 @@ img {
 
 /* hero */
 .hero {
-  padding: 200px;
+  padding: 200px 0px;
   text-align: center;
   max-width: 1600px;
   height: 600px;
@@ -208,7 +208,9 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.15;
-  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* section */
@@ -219,8 +221,11 @@ img {
 .section-title {
   margin-bottom: 50px;
   color: var(--title-text-color);
-  font-weight: bold;
   text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 .section-list {
   margin-top: -30px;
@@ -229,7 +234,6 @@ img {
   flex-wrap: wrap;
 }
 .section-list > .section-photo {
-  margin-bottom: 30px;
   flex-basis: calc (100% / 3 -30px);
   margin-top: 30px;
   margin-left: 30px;
@@ -244,12 +248,12 @@ img {
   display: flex;
 }
 
-.feature-list-content {
+/* .feature-list-content {
   display: block;
   justify-content: center;
   width: 270px;
   margin-left: 30px;
-}
+} */
 .feature-list-content:not(:first-child) {
   margin-left: 30px;
 }
@@ -258,9 +262,9 @@ img {
   background-color: var(--bg-icon-feature);
   display: flex;
   justify-content: center;
-  height: 120px;
-  width: 270px;
-  padding: 25px 100px;
+  /* height: 120px;
+  width: 270px; */
+  padding: 25px 0px;
   margin-bottom: 30px;
 }
 
@@ -369,8 +373,7 @@ img {
 
 .Regular-customers {
   display: block;
-  width: 170px;
-  height: 92px;
+
   border: 1px solid #afb1b8;
   padding: 16px 32px;
   border-radius: 4px;
@@ -461,8 +464,9 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.contact-footer-list:not(:last-child) {
-  margin-bottom: 9px;
+/* .contact-footer-list:not(:last-child) { */
+.contact-footer-list {
+  margin-top: 9px;
 }
 .address-content {
   margin-top: 20px;
@@ -474,7 +478,6 @@ img {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
 }
 /* portfolio */
 
@@ -511,7 +514,6 @@ img {
 
 /* projects */
 .projects {
-  margin-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--cart-set-gap));
@@ -550,6 +552,7 @@ img {
   padding-left: 23px;
   border: 1px solid #eeeeee;
 }
+
 .projects-work:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
