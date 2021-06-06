@@ -13,6 +13,7 @@
   --background-color-secondary: #2f303a;
   --cart-set-gap: 30px;
   --bg-icon-feature: #f5f4fa;
+  --bg-color-thumba: rgba(33, 150, 243, 0.9);
 }
 html {
   box-sizing: border-box;
@@ -167,14 +168,6 @@ img {
   fill: #2196f3;
 }
 
-/* .contact :hover,
-.contact :focus {
-  color: var(--accent-color);
-}
-.header-icon :hover,
-.header-icon :focus {
-  fill: var(--accent-color);
-} */
 .no-padding {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -194,14 +187,12 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/img.jpg');
+    url("../images/img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-/* .hero-content {
-  padding: 213px 287px;
-} */
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -249,12 +240,6 @@ img {
   display: flex;
 }
 
-/* .feature-list-content {
-  display: block;
-  justify-content: center;
-  width: 270px;
-  margin-left: 30px;
-} */
 .feature-list-content:not(:first-child) {
   margin-left: 30px;
 }
@@ -263,8 +248,7 @@ img {
   background-color: var(--bg-icon-feature);
   display: flex;
   justify-content: center;
-  /* height: 120px;
-  width: 270px; */
+
   padding: 25px 0px;
   margin-bottom: 30px;
 }
@@ -343,7 +327,6 @@ img {
 .social {
   justify-content: center;
   display: flex;
-  /* margin: 16px 32px 0px 32px; */
 }
 .social-link-content {
   padding: 12px;
@@ -466,7 +449,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-/* .contact-footer-list:not(:last-child) { */
+
 .contact-footer-list {
   margin-top: 9px;
 }
@@ -566,6 +549,21 @@ img {
   flex-basis: calc(100% / 3 - var(--cart-set-gap));
   margin-left: var(--cart-set-gap);
   margin-top: var(--cart-set-gap);
+}
+.card-tumba:hover::before {
+  opacity: 1;
+}
+.card-tumba {
+  position: relative;
+}
+.card-tumba::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
 }
 
 .card-content {
