@@ -19,7 +19,7 @@
             <nav class="main-nav">
                 <a href="./index.html" class="logo ">Web<span class="logo-title ">Studio</span></a>
                 <ul class="site-nav list ">
-                    <li class="nav-link"><a href="./index.html" class="link currnet">Студия</a></li>
+                    <li class="nav-link"><a href="./index.html" class="link currnet">Студия</a><div class="currnet-box"></div></li>
                     <li class="nav-link"><a href="./portfolio.html" class="link ">Портфолио</a></li>
                     <li class="nav-link"><a href="#" class="link">Контакты</a></li>
                 </ul>
@@ -41,7 +41,17 @@
                 <div class="container" >
                     <div class="hero-content">
                         <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                        <button  class="button-primary">Заказать услугу</button>
+                        <button data-modal-open class="button-primary">Заказать услугу</button>
+                    </div>
+                    <div class="backdrop is-hidden" data-modal >
+                        <div class="modal">
+                            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Iste quae, eaque amet accusamus adipisci nemo laudantium dolor 
+                                tempore quos sapiente debitis labore animi saepe est inventore 
+                                vitae sunt consequatur perspiciatis.
+                            </P>                            
+                            <button data-modal-close>Закрыть</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -112,12 +122,15 @@
                         <ul class="section-list list">
                             <li class="section-photo">
                                 <img src="./images/box1.jpg" width="370" alt="человек набирая код на клавиатуре выводя информацию на планшет сверяя с блочной схемой">
+                                <div class="container-label"><p class="label">Десктопные приложения</p></div>
                             </li>
                             <li class="section-photo">
                                 <img src="./images/box2.jpg" width="370" alt="На экране ноутбука изображены примеры работ в мобильных приложениях">
+                                <div class="container-label"><p class="label">Мобильные приложения</p></div>
                             </li>
                             <li class="section-photo">
                                 <img src="./images/box3.jpg" width="370" alt="планшет с палитрой цветов">
+                                <div class="container-label"><p class="label">Дизайнерские решения</p></div>
                             </li>
                         </ul>
                     </div>
@@ -375,6 +388,7 @@
                         </ul>
                     </div>
                 </div>
-            </footer>      
-    </body>       
+            </footer>
+        <script src="/js/modal.js"></script>
+     </body>       
 </html>
